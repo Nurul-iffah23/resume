@@ -1,0 +1,123 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffeef8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffb8d5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Profile Picture */
+.profile-pic {
+    width: 150px; /* Set the image size */
+    height: 150px; /* Maintain square shape */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image is cropped correctly */
+    display: block;
+    margin: 0 auto 10px; /* Centers the image and adds spacing */
+}
+
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #ffb8d5;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ffb8d5;
+    color: #fff;
+}
+
+/* Skills List */
+ul.skills {
+    list-style-type: square;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+/* General List Styling for Sections */
+ul.skills, ul.hobbies {
+    list-style-type: square; /* Square bullets */
+    margin: 10px 0;
+    padding-left: 20px; /* Aligns bullets neatly */
+    line-height: 1.8; /* Adds spacing between items for readability */
+}
+
+/* Ensure consistent alignment for hobbies */
+ul.hobbies {
+    list-style-type: circle; /* Circle bullets for differentiation */
+    margin: 10px 0;
+    padding-left: 20px; /* Aligns bullets neatly */
+}
+
+/* Bullet Alignment Fix */
+section ul {
+    padding-left: 20px; /* Proper indentation for bullets */
+    margin-left: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+}
